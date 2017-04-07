@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class Fibonacci {
+public class sumFibo {
     public static void main(String[]args) {
+		long jum=0;
         Scanner show = new Scanner(System.in);
         System.out.print("Input : ");
         int n = show.nextInt();
@@ -16,7 +17,9 @@ public class Fibonacci {
          
         for (int i = 0; i < n; i++) {
             System.out.print(fib[i] +  " ");
+			jum=jum+fib[i];
         }
+		System.out.println("\nHasil penjumlahan : " + jum);
     }
  
 }
