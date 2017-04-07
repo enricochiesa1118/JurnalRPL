@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Fibonacci {
+public class reversefibo {
     public static void main(String[]args) {
         Scanner show = new Scanner(System.in);
         System.out.print("Input : ");
@@ -14,7 +14,7 @@ public class Fibonacci {
             fib[i] = fib[i-1] + fib[i-2];
         }
          
-        for (int i = 0; i < n; i++) {
+        for (int i = n-1; i >= 0; i--) { // untuk menampilkan bilangan scr descending
             System.out.print(fib[i] +  " ");
         }
     }
